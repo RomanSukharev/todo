@@ -1,0 +1,38 @@
+.tools {
+  width: 100%;
+  margin: -20px 0px -20px;
+}
+
+.tools-area {
+  display: flex;
+  gap: 110px;
+}
+
+.buttons {
+  width: 100%;
+  padding: 10px 0px 0px;
+}
+.buttons-area {
+  display: flex;
+  gap: 5px;
+  padding-left: 118px;
+}
+
+.done {
+  background-color: rgb(167, 206, 128);
+}
+
+.pinned {
+  background-color: rgb(236, 188, 126);
+}
+
+.deleted {
+  background-color: rgb(236, 188, 126);
+}
+.tools-area__search {
+  margin-left: 25px;
+}
+.tools-area__filter {
+  display: flex;
+  gap: 5px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to-do</title>
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/popup.css">
+  <link rel="stylesheet" href="./css/tools.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="inner">
+      <form class="form" onsubmit="openPopup(); return false;">
+        <h4 class="form__title">TO - DO List </h4>
+        <button class="form__send-btn" type="submit">Добавить</button>
+      </form>
+      <div class="tools">
+        <div class="tools-area">
+          <input type="search" class="tools-area__search" placeholder="Поиск задачи"
+            oninput="searchTasks(this.value)"></input>
+          <div class="tools-area__filter">
+            <button class="tools-area__all" onclick="showAllTasks()">all</button>
+            <button class="tools-area__sort" onclick="sortTasksById()">sort</button>
+            <button class="tools-area__done" onclick="showDoneTasks()">done</button>
+            <button class="tools-area__fixed" onclick="showFixedTasks()">fixed</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="output" id="tasks"></div>
+    </div>
+  </div>
+
+
+  <div class="popup-wrapper" id="popup">
+    <div class="popup">
+      <div class="popup-form">
+        <div class="popup-form__closePopup" onclick="closePopup()">x</div>
+        <textarea class="popup-content__textarea" placeholder="Ваша задача"></textarea>
+        <div class="popup-content__btn">
+          <div class="popup-content__add" type="submit">Добавить</div>
+          <div class="popup-content__cancel" onclick="closePopup()">Отмена</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-wrapper-second" id="popup-second">
+    <div class="popup-second">
+      <div class="popup-form-second">
+        <div class="popup-form__closePopup-second" onclick="closePopupSecond()">x</div>
+        <textarea class="popup-content__textarea-second"></textarea>
+        <div class="popup-content__btn-second">
+          <div class="popup-content__ready-second" type="submit">Готово</div>
+          <div class="popup-content__cancel-second" onclick="closePopupSecond()">Отмена</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="./js/fetch.js" defer></script>
+  <script src="./js/popup.js" defer></script>
+  <script src="./js/tasks.js" defer></script>
+  <script src="./js/addTask.js" defer></script>
+  <script src="./js/tools.js" defer></script>
+</body>
+
+</html>

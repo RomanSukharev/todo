@@ -1,0 +1,155 @@
+.popup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 500ms;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-form {
+  position: relative;
+}
+
+.popup-form__closePopup {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  cursor: pointer;
+
+}
+
+.popup-content__textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.popup-content__title {
+  display: flex;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.popup-content__btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-content__add,
+.popup-content__cancel {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content__add {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.popup-content__cancel {
+  background-color: #f44336;
+  color: #fff;
+}
+
+
+
+.popup-wrapper-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 500ms;
+}
+
+.popup-second {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-form-second {
+  position: relative;
+}
+
+.popup-form__closePopup-second {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.popup-content__textarea-second {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.popup-content__btn-second {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-content__ready-second,
+.popup-content__cancel-second {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.popup-content__ready-second {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.popup-content__cancel-second {
+  background-color: #f44336;
+  color: #fff;
+}
